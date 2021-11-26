@@ -1,0 +1,429 @@
+@font-face {
+    font-family: "Amazon Ember";
+    src: url(../fonts/Ember/);
+}
+
+* {
+    font-family: "Amazon Ember",Arial,sans-serif;
+    line-height: 1.15;
+    
+}
+
+body{
+    color: #0F1111;
+}
+
+.topheader{
+    display: grid;     
+}
+
+.navTop{
+    display: flex;
+    width:100%;
+    position: realtive;
+    background-color: #131921;  
+}
+.nav-main{
+    position: relative;
+    display: flex;
+    width:100%;
+    background-color:  #232F3F;
+}
+.nav-logo-link{
+    float: left;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+    text-decoration-color:rgb(0, 113, 133) ;
+}
+
+.logo {
+    float: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    pointer-events: none;
+    float: left;
+    text-indent: -500px;
+    background-position: -10px -51px;
+    padding: 1px 8px 0 6px;
+    width: 97px;
+    height: 30px;
+    background-image:url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    background-repeat: repeat-x;
+}
+.nav-sprite {
+    float:left;
+    background-image:url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    background-position: 0 1000px; 
+    background-repeat: repeat-x;
+} 
+.location{
+    float: left;
+    width: 250px;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    pointer-events: none;
+    float: left;
+    color: #fff;
+}
+.nav-location{
+    background-position: -71px -378px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px; 
+    margin-right: 10px; 
+}
+.location-text{
+    display: flex;
+    flex-direction: column;
+}
+.deliverTo{
+    margin-left: 8px;
+    width: 100%;
+   display: block; 
+   float: left;
+   font-size: 14px;
+   color: #cccccc;
+   font-weight: 400;
+}
+.countryName{
+    margin-left: 8px;
+    display: block; 
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+.nav-icon{
+    background-position: 0px 1000px;
+    width: 8px;
+    height: 4px;
+    margin-top: 8px;  
+}
+.search{
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;;
+}
+
+.nav-search-dropdown{
+    position: relative;
+    top:0;
+    left:0;
+    display: block;
+    width:auto;
+}
+.nav-search-field {
+    position: relative;
+    padding: 7px 10px 10px 0;
+    display: flex;
+    top:5px;
+    left: 220px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.right-side{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    width:100%;
+    height: 60px;
+    color: #0F1111;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+}
+
+/**  Language selection Styles**/
+.nav-a{
+    float: left;
+    box-sizing: content-box;
+    padding: 8px 12px;
+    margin: 5px 0 6px 0;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 12px;
+    height: 12px;
+}
+.nav-line-1{
+    display: flex;
+    align-items: center;
+    padding:0;
+    padding-bottom: 2px;
+    margin:0;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.nav-line-2{
+    display: flex;
+    align-items: center;
+    left: -7px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    height: 14px;
+    font-weight: 700;
+}
+
+.icp-nav-link-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    left: -7px
+}
+
+.icp-nav-flag{
+    display: flex;
+    margin: 0 2px 1px 0;
+    padding:0;
+    background-image: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+    background-position: 0 -130px;
+    align-items: center;
+    width: 24px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+}
+.nav-icon{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    background-position: 0 -1000px;
+    align-items: center;
+}
+
+.nav-cart-count{
+    position: relative;
+    float: left;
+    top: 2px;
+    left: 13px;
+    right: 6px;
+    right: auto;
+    color: #f08804;
+    font-weight: 700;
+    font-size: 16px;
+    width: 19px;
+    
+}
+
+.nav-cart-icon{
+    display: flex;
+    position: relative;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    background-position: -10px -340px;
+    width: 40px;
+    height: 26px;
+    left: 10px;
+    top: 20px;
+    overflow: hidden;
+}
+  /** end of first row of navigation  **/
+
+/**  this is the second line of navigation*******/
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
+.nav-left{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 15px;;
+    width:auto;
+    max-height: 39px;
+    padding-top: 20px;
+}
+
+.hm-icon{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+    width: 17px;
+    height: 14px;
+    background-position: -172px -255px;
+    color: #fff;
+}
+
+.hm-icon-label{
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.nav-fill-link-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    padding:0;
+    margin-left: 70px;
+}
+
+.nav-right{
+    
+    float: none;
+    flex-flow: row wrap;
+    margin: 21px 0 0;
+    max-height: 39px;
+    overflow: hidden;
+   
+}
+.nav-right-link{
+    position: static;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    padding: 5px 8px 6px 8px;
+    margin: 6px 2px 7px 1px;
+    box-shadow: none;
+    font-family: inherit;
+    text-decoration: none;
+}
+.promotion{
+    margin-bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    min-width: 650px;
+}
+.promo-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+.images-container{
+ display: flex;
+ position: relative;
+
+}
+.thumbnail-container{
+    display: flex;
+    flex-direction: column; 
+    height: 500px;
+}
+.thumbnail-container a{
+    padding-bottom: 10px;
+    cursor: default;
+    
+}
+.thumbnail-container a:hover{
+ border: 0.5px solid #e77600;
+ box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+
+.thumbnail-container a img{
+    box-sizing: border-box;
+    border: 0.2px solid rgb(15,17,17);   
+}
+
+.large-image-container{
+ position: relative;
+ padding-left: 20px;
+ width: 680px;
+ height: 700px;
+}
+
+.large-image-container img{
+    width: 600px;
+    height: 500px;
+}
+
+.item-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 500px;
+    width: 545px;
+    color: #0F1111;
+
+}
+.title{
+    display: inline;
+    height: 12rem;
+    color: #0F1111;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 1rem;
+    text-align: justify;
+}
+
+.title a{
+    text-decoration: none;
+    color: #007185;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    cursor: default;
+}
+.title a:hover{
+    border-bottom: 1px solid #c7511f;
+    text-decoration: none;
+    color:#c7511f ;
+}
+
+
+.add-to-cart{
+    display: flex;
+    height: 500px;
+    width: 30%;
+    color: #0F1111;
+}
+
+.model-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10rem;
+}
+
+.model-details ul {
+    list-style-type: none;
+    margin: 1rem;
+    
+  }
+  .title-bold{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      columns: #0f1111;
+      margin-right: 20px;
+
+  }
+
+  .title-reg{
+    position: relative;
+    justify-self:end;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    columns: #0f1111;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
