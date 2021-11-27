@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amzon Mock Up Project</title>
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/mystyle.css">
+    <link rel="stylesheet" href="./CSS/mystyle.css">  
 </head>
 <body>
 
@@ -14,24 +14,27 @@
         <nav class="navTop">
 
     <!-- this is left section of the top navigation bar-->
+           <a href="#">
             <div class="logo">
                 <span class="nav-sprite logo"></span>
             </div>
+            </a>
+            <a href="#">
             <div class="location">
-                <a href="#">
                 <div class="nav-sprite nav-location"></div>
                  <div class="location-text">
                     <span class="deliverTo">Deliver to</span>
                     <span class="countryName">Israel</span>
                  </div>
-                </a> 
-            </div>
+               
+            </div> 
+            </a> 
             <div class="search">
             </div>  
    <!--  this is the right section of the top navigation bar-->           
             <div class="right-side">
                 <!-- langauge icon-->
-                <a class="nav-a" href="https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?ie=UTF8&preferencesReturnUrl=%2FCanon-Rebel-T7-18-55mm-II%2Fdp%2FB07C2Z21X5%2Fref%3Dsr_1_4%3Fqid%3D1637841898%26rnid%3D502394%26s%3Delectronics%26sr%3D1-4" id="icp-nav-flyout" class="nav-a nav-a-2 icp-link-style-2" aria-label="Choose a language for shopping.">
+                <a class="nav-a" href="https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?ie=UTF8&preferencesReturnUrl=%2FCanon-Rebel-T7-18-55mm-II%2Fdp%2FB07C2Z21X5%2Fref%3Dsr_1_4%3Fqid%3D1637841898%26rnid%3D502394%26s%3Delectronics%26sr%3D1-4"  class="nav-a nav-a-2 icp-link-style-2" aria-label="Choose a language for shopping.">
                   <span class="icp-nav-link-inner">
                     <span class="nav-line-1">
                     </span>
@@ -49,13 +52,11 @@
                 <span class="nav-line-2 ">Account &amp; Lists<span class="nav-icon nav-arrow" style="visibility: visible;"></span>
                 </span>
               </a>
-              
-                            
-              <a class="nav-a" href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first" class="nav-a nav-a-2   nav-progressive-attribute" id="nav-orders" tabindex="0">
+                     
+              <a class="nav-a" href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first" class="nav-a nav-a-2   nav-progressive-attribute" id="nav-orders" >
                 <span class="nav-line-1">Returns</span>
                 <span class="nav-line-2">&amp; Orders</span>
-              </a>              
-                            
+              </a>                               
                 <a class="nav-a" href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" aria-label="0 items in cart" class="nav-a nav-a-2 nav-progressive-attribute" id="nav-cart">
                   <div id="nav-cart-count-container">
                     <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-0 ">0</span>
@@ -112,38 +113,43 @@
         </div>
     <section class="middle">
         <div class="images-container">
+            <script src="./galler.js"></script>
             <div class="thumbnail-container">
-                <a href="#">
+                <a onmouseover="large(this.id)" href="#" id="1">
                     <img src="./images/image1s.jpg" alt="">
                 </a>
-                <a href="#">
+                <a onmouseover="large(this.id)"href="#" id="2">
                     <img src="./images/image2s.jpg" alt="">
                 </a>
-                <a href="#">
+                <a onmouseover="large(this.id)" href="#" id="3">
                     <img src="./images/image3s.jpg" alt="">
                 </a>
-                <a href="#">
+                <a onmouseover="large(this.id)" href="#" id="4">
                     <img src="./images/image4s.jpg" alt="">
                 </a>
-                <a href="#">
+                <a onmouseover="large(this.id)" href="#" id="5">
                     <img src="./images/image5s.jpg" alt="">
                 </a>
-                <a href="#">
+                <a onmouseover="large(this.id)" href="#" id="6">
                     <img src="./images/videosmall.jpg" alt="">
                 </a>
             </div>
            <div class="large-image-container">
-            <img src="./images/image4L.jpg" alt="">
+            <img id="large-image" src="./images/image4L.jpg" alt="">
            </div>
+           
         </div>
         <div class="item-description">
             <div class="title">
-               <p>Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor 
+               <p>Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens| Built-in Wi-Fi| 24.1 MP CMOS Sensor 
                    | DIGIC 4+ Image Processor and Full HD Videos</p> 
-                   <a href="https://www.amazon.com/stores/Canon/page/5FDDA83E-27A1-472F-8444-4828B50C4243?ref_=ast_bln">Visit the Canon Store</a>
-                   <a href="#">
+                   <div><a class="description-links" href="https://www.amazon.com/stores/Canon/page/5FDDA83E-27A1-472F-8444-4828B50C4243?ref_=ast_bln">Visit the Canon Store</a>
+                </div>
+                   
+                   <div><a href="#">
                     <img src="./images/rating2.PNG" alt="product rating">
-                   </a>
+                   </a></div>
+                   
                 </div>
             <div class="model-details">
              
@@ -169,16 +175,82 @@
                         <span class=" title-bold">Color</span>
                         <span class=" title-reg">Black</span>
                     </div>
-                   
+                    
+                    <hr>
+                    
+                <div class="about-this-item">
+                    <h1>About this item</h1>
+                    
+                    <ul>
+                        <li><span class="a-list-item">
+                        24.1 Megapixel CMOS (APS-C) sensor with is 100–6400 (H: 12800)
+                        </span></li>
+                        <li><span class="a-list-item">
+                        Built-in Wi-Fi and NFC technology
+                        
+                        </span></li>
+                        
+                        <li><span class="a-list-item">
+                        9-Point AF system and AI Servo AF
+                        
+                        </span></li>
+                        
+                        <li><span class="a-list-item">
+                        Optical Viewfinder with approx 95% viewing coverage
+                        
+                        </span></li>
+                        
+                        <li><span class="a-list-item">
+                        Use the EOS Utility Webcam Beta Software (Mac and Windows) to turn your compatible Canon camera into a high-quality webcam
+                        
+                        </span></li>
+                        
+                        </ul>
+                    </div>
+                    <div >
+                        <a class="description-links" href="#">                
+                            Compare with similar items
+                        </a>
+                        <br>
+                        <a class="description-links" href="#">                
+                            New & Used (4) from <span>$479.99</span>
+                        </a>
+                        </div>
             </div>
         </div>
-        <div class="add-to-cart">
+        <div class="right-side-box">
+            
+            <button type="button" class="similar-items">
+                See Similar Items
+            </button>
 
+            <button type="button" class="buying-options">
+               See all buying-options
+            </button>
+            <div >
+               <a href="#">
+                    <img src="./images/deliverTo.PNG" alt="product rating">
+                   </a> 
+            </div>
+            <div>
+                <select class="add-to" name="drop-down">
+                    <option value="Cerate New List">Add to List</option>
+                    <option value="Cerate New List">Create new List</option>
+                  </select>
+            </div>
         </div>
-    </section>
-
-    <div class="carosel">
-
+            
     </div>
-</body>
+            
+    </section>
+<!--    This section uses a script to dynamically create carousel-->
+ 
+<div class="carosel">
+    <script src="./carousel.js"></script>
+</div>
+    
+
+            
+        
+
 </html>
